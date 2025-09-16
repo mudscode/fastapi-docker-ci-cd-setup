@@ -13,6 +13,6 @@ def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "q": q}
 
 # Add this to your main FastAPI file (probably app.py)
-@app.get("/health")
+@app.get("/health") 
 def health_check():
     return {"status": "healthy", "message": "FastAPI is running!"}
